@@ -40,7 +40,7 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h1 class="fs-primary-heading fw-bold">Brind everyone together to build better products.</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed maiores possimus autem, illo quasi, impedit dolor veritatis beatae tempora reiciendis, doloribus corporis.</p>
               <button class="button">Get Started</button>
@@ -55,19 +55,31 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h2 class="fs-secondary-heading fw-bold">What's differente about Manage?</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium saepe atque consequuntur expedita velit accusantium perferendis soluta ex molestiae.</p>
             </div>
             <div>
-              <ul class="numbered-items" role="list">
-                <li><h3 class="fs-600-fw-bold">Titulo 1</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquam error consectetur ipsam amet. Quam et aperiam dicta enim? Facere fugit sequi commodi dolor reiciendis nulla consectetur itaque atque id.
-                </p></li>
-                <li><h3 class="fs-600-fw-bold">Titulo 2</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquam error consectetur ipsam amet. Quam et aperiam dicta enim? Facere fugit sequi commodi dolor reiciendis nulla consectetur itaque atque id.</p></li>
-                <li><h3 class="fs-600-fw-bold">Titulo 3</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquam error consectetur ipsam amet. Quam et aperiam dicta enim? Facere fugit sequi commodi dolor reiciendis nulla consectetur itaque atque id.</p></li>
+              <ul class="numbered-items | flow " role="list">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">Titulo 1</h3>
+                    <p data-width="wide" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquam error consectetur ipsam amet. Quam et aperiam dicta enim? Facere fugit sequi commodi dolor reiciendis nulla consectetur itaque atque id.
+                    </p>
+                  </div>
+              </li>
+                <li>
+                <div class="flow" style="--flow-spacer: 1em">
+                <h3 class="fs-600 fw-bold">Titulo 2</h3>
+                <p data-width="wide" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquam error consectetur ipsam amet. Quam et aperiam dicta enim? Facere fugit sequi commodi dolor reiciendis nulla consectetur itaque atque id.</p>
+              </div>
+              </li>
+                <li>
+                <div class="flow" style="--flow-spacer: 1em">
+                <h3 class="fs-600 fw-bold">Titulo 3</h3>
+                <p data-width="wide" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum aliquam error consectetur ipsam amet. Quam et aperiam dicta enim? Facere fugit sequi commodi dolor reiciendis nulla consectetur itaque atque id.</p>
+              </div>
+              </li>
               </ul>
             </div>
           </div>
@@ -80,13 +92,15 @@
         <button class="button">Get Started</button>
       </section>
 
-      <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
+      <section class="cta | padding-block-900 bg-accent-400 text-neutral-100">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns vertical-align-center-md">
             <div>
                 <p class="fs-secondary-heading fw-bold">Simplify how your team works today.</p>
             </div>
-             <div><button class="button" data-type="inverted">Get Started</button></div>
+             <div class="justify-self-end-md">
+              <button class="button" data-type="inverted">Get Started</button>
+            </div>
           </div>
         </div>
       </section>

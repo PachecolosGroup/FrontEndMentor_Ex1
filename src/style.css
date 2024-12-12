@@ -134,14 +134,33 @@ svg {
 
 }
 
-
 @media (min-width: 50em){
   .even-columns{
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+
+.vertical-align-center-md{
+  align-items: center;
+}
+
+@media (min-width: 50em) {
+  .justify-self-end-md{
+    justify-self: end;
+  }
 
 }
+.justify-self-end{
+  justify-self: end;
+}
+
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 4em);
+}
+
 
 
 /*General Style*/
@@ -150,9 +169,16 @@ body{
   font-size: var (--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-primary-400);
-
 }
 
+p:not([class])  {
+  opacity: 0.7;
+  max-width: 36ch;
+}
+
+p[data-width="wide"]{
+  max-width: 44ch;
+}
 
 /*Button*/
 
@@ -274,7 +300,21 @@ body{
   }
 }
 
+/* CTA */
 
+.cta{
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+
+@media (min-width: 50em) {
+  .cta{
+    text-align: left;
+  }
+  
+  
+}
 
 /*Utility Classes */
 
